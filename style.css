@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.closed-face-div,
+.open-face-div{
+    display: none;      /*to hide both faces, then use javaScript to toggle*/
+    text-align: center;
+    font-weight: 600;
+}
+
+.active-face-div{
+    display: block;
+}
+
+.monkey-text-closed{
+    color: rgb(65, 95, 6);
+}
+
+.monkey-text-open{
+    color: rgb(7, 105, 105);
+}
+
+.click-face-closed,
+.click-face-open{
+    margin: 10px;
+    color: brown;
+    font-size: 17px;
+    text-decoration: underline;
+}
+
+.closed-face-monkey,
+.open-face-monkey{
+    width: 200px;       /*If it is emoji, use font-size to resize*/
+    height: 200px;
+    border-radius: 50%;
+    cursor: pointer;
+    user-select: none;  /*to remove the blue background on-click*/ 
+}
+
+.active-face{
+    display: block;     /*only the active face has this class*/
+}
